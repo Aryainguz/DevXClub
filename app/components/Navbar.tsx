@@ -2,6 +2,10 @@
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { FloatingLogo } from "./ui/floating-logo";
+import Image from "next/image";
+import Logo from "../../public/assets/Logo.png";
+import { Floatingbtn } from "./ui/floationg-Loginbtn";
 export function Navbar() {
   const navItems = [
     {
@@ -23,6 +27,10 @@ export function Navbar() {
     },
   ];
   return (
+    <>
       <FloatingNav navItems={navItems} />
+      <FloatingLogo logo={<Image src={Logo} width={50} height={50} alt="Logo" />} text="DevXClub" />
+      <Floatingbtn text="Register Now" />
+    </>
   );
 }
