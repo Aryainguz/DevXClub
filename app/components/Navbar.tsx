@@ -25,11 +25,18 @@ export function Navbar() {
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
+    {
+      name: "Projects",
+      link: "/projects",
+      icon: (
+        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
+    },
   ];
   return (
     <>
       <FloatingNav navItems={navItems} />
-      <FloatingLogo logo={<Image src={Logo} width={50} height={50} alt="Logo" />} text="DevXClub" />
+      <FloatingLogo logo={<Image src={Logo} width={40} height={40} alt="Logo" />} text="DevXClub" />
       <Floatingbtn text="Register Now" />
     </>
   );

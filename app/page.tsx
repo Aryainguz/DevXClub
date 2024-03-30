@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      {/* <NewHero /> */}
+      <NewHero />
+      {/* <Hero /> */}
       <HoverEffect />
       <HowItWorks />
       <ScrollSection />
