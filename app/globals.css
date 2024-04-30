@@ -31,3 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff; /* Color of the scrollbar handle */
+  border-radius: 4px; 
+  /* Rounded corners for the handle */
+}
+
+
